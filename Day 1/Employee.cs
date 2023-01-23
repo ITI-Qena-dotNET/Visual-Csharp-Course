@@ -1,6 +1,4 @@
-﻿using System.Collections;
-
-namespace Lab1;
+﻿namespace Lab1;
 
 public interface IPayable
 {
@@ -20,10 +18,10 @@ public class Employee : IPayable
         _name = name;
     }
 
-    public int Salary 
-    { 
+    public int Salary
+    {
         get => _salary;
-        set => _salary = value; 
+        set => _salary = value;
     }
 
     public string Name
@@ -74,7 +72,7 @@ public class Trainee : IPayable
 
 public class TraineeComparer : IComparer<Trainee>
 {
-    public int Compare(Trainee? x, Trainee? y)
+    public int Compare(Trainee x, Trainee y)
     {
         if (x.Salary > y.Salary)
             return 1;
