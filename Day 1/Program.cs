@@ -57,7 +57,7 @@ void Problem3()
 {
     Phonebook phonebook = new();
     phonebook[123] = "Ali";
-    //phonebook["Hossam"] = 456; // Error here
-    string phone = phonebook["Ali"];
+    phonebook["Hossam"] = 456;
+    int phone = phonebook["Ali"];
     Console.WriteLine(phone);
 }

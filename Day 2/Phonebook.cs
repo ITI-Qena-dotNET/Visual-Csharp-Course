@@ -1,4 +1,4 @@
-﻿namespace Lab1;
+﻿namespace Lab2;
 
 public class Phonebook
 {
